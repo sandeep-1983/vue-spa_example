@@ -1,0 +1,38 @@
+{
+  "name": "vue-spa_example",
+  "version": "1.0.0",
+  "description": "Vue Single Page Application Example",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeep-1983/vue-spa_example.git"
+  },
+  "author": "sandeep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandeep-1983/vue-spa_example/issues"
+  },
+  "homepage": "https://github.com/sandeep-1983/vue-spa_example#readme",
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.1.0",
+    "vue-loader": "^15.2.6",
+    "vue-style-loader": "^4.1.1",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0"
+  }
+}
