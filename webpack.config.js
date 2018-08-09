@@ -26,15 +26,10 @@ module.exports = {
             },
             {
                 test: /\.(gif|png|jpe?g)$/i,
-                use: [
-                    "file-loader",
-                    {
-                        loader: "image-webpack-loader",
-                        options: {
-                            bypassOnDebug: true
-                        }
-                    }
-                ]
+                loader: "file-loader",
+                options: {
+                    name: '/Content/app/dist/images/[hash].[ext]',
+                },
             },
         ]
 },
