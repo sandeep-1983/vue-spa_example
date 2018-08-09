@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id='myDashboardPage'>I am Dashboard</div>
+        <div id='myDashboardPage'><h1><b>DASHBOARD</b></h1></div>
         <img src="../../../assets/walbaum.jpg" alt="DASHBOARD IMAGE">
         <ul>
             <li>

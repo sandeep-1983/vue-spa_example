@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id='myFamilyPage'>I am Family</div>
+        <div id='myFamilyPage'><h1><b>FAMILY PAGE</b></h1></div>
         <img src="../../../assets/neue_helvetica.png" alt="FAMILY IMAGE">
         <ul>
             <li>

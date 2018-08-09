@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id='mySearchPage'>SEARCH</div>
+        <div id='mySearchPage'><h1><b>SEARCH</b></h1></div>
         <img src="../../../assets/calm.png" alt="SEARCH IMAGE">
         <ul>
             <li>
@@ -12,6 +12,7 @@
         </ul>
     </div>
 </template>
+
 
 <script src="./search.js"></script>
 
