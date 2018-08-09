@@ -18,7 +18,7 @@ function init(){
                 component: views.Search,
             },
             {
-                path: '/family/:familyId',
+                path: '/Family/:familyId?',
                 name: 'Family',
                 component: views.Family,
             }

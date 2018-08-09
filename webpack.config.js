@@ -1,5 +1,6 @@
 const path = require('path');
-const { VueLoaderPlugin, }  = require('vue-loader');
+const webpack= require('webpack');
+const { VueLoaderPlugin, } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('html-webpack-plugin');
 
@@ -22,19 +23,31 @@ module.exports = {
                 include: [
                     path.join(__dirname, 'src'),
                 ],
-            }
+            },
+            {
+                test: /\.(gif|png|jpe?g)$/i,
+                use: [
+                    "file-loader",
+                    {
+                        loader: "image-webpack-loader",
+                        options: {
+                            bypassOnDebug: true
+                        }
+                    }
+                ]
+            },
         ]
-    },
+},
     resolve: {
-        alias: {
-            'vue$': 'vue/dist/vue.esm.js',
+    alias: {
+        'vue$': 'vue/dist/vue.esm.js',
         }
-    },
-    plugins: [
-        new CleanWebpackPlugin(),
-        new VueLoaderPlugin(),
-        new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'index.html'),
-        }),
-    ]
+},
+plugins: [
+    new CleanWebpackPlugin(),
+    new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({
+        template: path.join(__dirname, 'index.html'),
+    }),
+]
 };
