@@ -1,18 +1,11 @@
-import Vue from 'vue';
 import axios from 'axios';
-export default Vue.extend({
+export default {
     name: 'App',
     data() {
         return {
             resp: '',
         };
     },
-    template: `<div>
-        <h1>Vue SPA</h1>
-        <router-view></router-view>
-        <a v-on:click="makeGetRequest"> CLICK to GET data</a>
-        <div>RESPONSE:{{resp}}</div>
-    </div>`,
     methods: {
         makeGetRequest() {
             axios({ method: "GET", "url": "dummyAjaxCall/WelcomeNote" })
@@ -26,4 +19,4 @@ export default Vue.extend({
 
         }
     },
-});
+};
